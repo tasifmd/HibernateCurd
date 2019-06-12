@@ -20,11 +20,11 @@ public class CurdServiceImpl implements CrudService {
 		Employee employee = new Employee();
 
 		System.out.println("Enter the employee name ");
-		String employeeName = scanner.nextLine();
+		String employeeName = scanner.next();
 		employee.setEmployeeName(employeeName);
 
 		System.out.println("Enter the employee email ");
-		String employeeEmail = scanner.nextLine();
+		String employeeEmail = scanner.next();
 		employee.setEmployeeEmail(employeeEmail);
 
 		System.out.println("Enter the employee mobile number ");
@@ -32,7 +32,7 @@ public class CurdServiceImpl implements CrudService {
 		employee.setEmployeeMobile(employeeMobile);
 
 		System.out.println("Enter the employee designation ");
-		String designation = scanner.nextLine();
+		String designation = scanner.next();
 		employee.setDesignation(designation);
 
 		session.beginTransaction();
@@ -56,7 +56,7 @@ public class CurdServiceImpl implements CrudService {
 			switch (choice) {
 			case 1:
 				System.out.println("Enter the employee name ");
-				String employeeName = scanner.nextLine();
+				String employeeName = scanner.next();
 				employee.setEmployeeName(employeeName);
 
 				session.beginTransaction();
@@ -65,7 +65,7 @@ public class CurdServiceImpl implements CrudService {
 				break;
 			case 2:
 				System.out.println("Enter the employee email ");
-				String employeeEmail = scanner.nextLine();
+				String employeeEmail = scanner.next();
 				employee.setEmployeeEmail(employeeEmail);
 
 				session.beginTransaction();
@@ -85,7 +85,7 @@ public class CurdServiceImpl implements CrudService {
 
 			case 4:
 				System.out.println("Enter the employee designation ");
-				String designation = scanner.nextLine();
+				String designation = scanner.next();
 				employee.setDesignation(designation);
 
 				session.beginTransaction();
